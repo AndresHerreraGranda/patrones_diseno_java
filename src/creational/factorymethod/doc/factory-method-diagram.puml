@@ -1,0 +1,25 @@
+@startuml
+interface Payment {
+    void doPayment();
+}
+
+class CardPayment implements Payment {
+    void doPayment()
+}
+
+class GooglePayment implements Payment {
+    void doPayment()
+}
+
+class PaymentFactory {
+    Payment buildPayment(TypePayment typePayment)
+}
+
+enum TypePayment {
+    CARD,
+    GOOGLEPAY
+}
+
+PaymentFactory ..> Payment
+TypePayment -> PaymentFactory
+@enduml
