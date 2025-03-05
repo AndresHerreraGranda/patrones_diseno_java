@@ -6,7 +6,9 @@ El **Factory Method** es un patrón de diseño creacional que proporciona una in
 
 Se utiliza cuando el código no debe depender de las clases concretas que necesita instanciar, sino de una interfaz o clase abstracta, delegando la creación a un método específico.
 
-En otras palabras, este patron permite seleccionar (*Creator*) diferentes objetos (*concrete*) a partir de una interfaz (*Product*)
+###En otras palabras
+Este patron permite seleccionar (*Creator*) diferentes objetos (*Concrete*) a partir de una interfaz (*Product*), cada objecto (*Concrete*) personaliza la implementación de la interfaz, lo que permite que cada objeto 
+
 
 ---
 ## Diagrama
