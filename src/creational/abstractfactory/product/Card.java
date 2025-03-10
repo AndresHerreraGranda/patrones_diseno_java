@@ -1,4 +1,4 @@
-package src.creational.abstractfactory;
+package src.creational.abstractfactory.product;
 
 public interface Card {
     String getCardType();

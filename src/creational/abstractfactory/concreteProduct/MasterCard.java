@@ -1,6 +1,8 @@
-package src.creational.abstractfactory;
+package src.creational.abstractfactory.concreteProduct;
 
-public class MasterCard implements Card{
+import src.creational.abstractfactory.product.Card;
+
+public class MasterCard implements Card {
     @Override
     public String getCardType() {
         return "MASTERCAR";

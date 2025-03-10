@@ -1,4 +1,9 @@
-package src.creational.abstractfactory;
+package src.creational.abstractfactory.concreteFactory;
+
+import src.creational.abstractfactory.concreteProduct.Credit;
+import src.creational.abstractfactory.concreteProduct.Debit;
+import src.creational.abstractfactory.creator.AbstractFactory;
+import src.creational.abstractfactory.product.PaymentMethod;
 
 public class PaymentFactory implements AbstractFactory<PaymentMethod> {
 

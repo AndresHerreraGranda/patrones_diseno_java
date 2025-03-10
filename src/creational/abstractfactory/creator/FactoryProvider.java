@@ -1,4 +1,7 @@
-package src.creational.abstractfactory;
+package src.creational.abstractfactory.creator;
+
+import src.creational.abstractfactory.concreteFactory.CardFactory;
+import src.creational.abstractfactory.concreteFactory.PaymentFactory;
 
 public class FactoryProvider {
     public static AbstractFactory getFactory(String chooseFactory){
