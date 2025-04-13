@@ -1,9 +1,8 @@
-package src.creational.abstractfactory.concreteFactory;
+package src.creational.abstractfactory.factory;
 
-import src.creational.abstractfactory.concreteProduct.MasterCard;
-import src.creational.abstractfactory.concreteProduct.Visa;
-import src.creational.abstractfactory.creator.AbstractFactory;
-import src.creational.abstractfactory.product.Card;
+import src.creational.abstractfactory.product.card.MasterCard;
+import src.creational.abstractfactory.product.card.Visa;
+import src.creational.abstractfactory.product.card.Card;
 
 public class CardFactory implements AbstractFactory<Card> {
     @Override

@@ -1,0 +1,51 @@
+@startuml
+class FactoryProvider {
+    AbstractFactory getFactory(String chooseFactory)
+}
+
+interface AbstractFactory<T>  {
+    T create(String type)
+}
+
+
+class CardFactory implements AbstractFactory<Card> {
+    Card create(String type)
+}
+
+class PaymentFactory implements AbstractFactory<PaymentMethod> {
+    PaymentMethod create(String type)
+}
+
+interface Card {
+    String getCardType();
+    String getCardNumber();
+}
+
+class MasterCard implements Card {
+    String getCardType()
+    String getCardNumber()
+}
+
+class Visa implements Card {
+    String getCardType()
+    String getCardNumber()
+}
+
+interface PaymentMethod {
+    String doPayment();
+}
+
+class Credit implements PaymentMethod {
+    String doPayment()
+}
+class Debit implements PaymentMethod {
+     String doPayment()
+}
+
+FactoryProvider --> AbstractFactory
+CardFactory --> Card
+PaymentFactory --> PaymentMethod
+
+
+
+@enduml

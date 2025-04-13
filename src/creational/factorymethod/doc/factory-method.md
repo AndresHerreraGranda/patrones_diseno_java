@@ -13,7 +13,7 @@ Este patron permite seleccionar (*Creator*) diferentes objetos (*Concrete*) a pa
 ---
 ## Diagrama
 
-![img.png](doc/factory-method-diagram.png)
+![factory-method-diagram.png](factory-method-diagram.png)
 
 ---
 

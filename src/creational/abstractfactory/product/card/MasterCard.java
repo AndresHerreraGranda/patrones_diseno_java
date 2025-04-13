@@ -1,6 +1,4 @@
-package src.creational.abstractfactory.concreteProduct;
-
-import src.creational.abstractfactory.product.Card;
+package src.creational.abstractfactory.product.card;
 
 public class MasterCard implements Card {
     @Override

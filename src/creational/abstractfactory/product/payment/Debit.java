@@ -1,6 +1,4 @@
-package src.creational.abstractfactory.concreteProduct;
-
-import src.creational.abstractfactory.product.PaymentMethod;
+package src.creational.abstractfactory.product.payment;
 
 public class Debit implements PaymentMethod {
     @Override

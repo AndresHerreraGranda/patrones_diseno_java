@@ -1,9 +1,9 @@
 package src.creational.abstractfactory;
 
-import src.creational.abstractfactory.creator.AbstractFactory;
-import src.creational.abstractfactory.creator.FactoryProvider;
-import src.creational.abstractfactory.product.Card;
-import src.creational.abstractfactory.product.PaymentMethod;
+import src.creational.abstractfactory.factory.AbstractFactory;
+import src.creational.abstractfactory.factory.FactoryProvider;
+import src.creational.abstractfactory.product.card.Card;
+import src.creational.abstractfactory.product.payment.PaymentMethod;
 
 public class Main {
     public static void main(String[] args) {
