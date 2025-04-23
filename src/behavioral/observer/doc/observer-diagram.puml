@@ -1,0 +1,52 @@
+@startuml
+Semaforo  --> Observer
+Semaforo  -->  Subject
+
+MessagePublisher --> Cliente
+class Semaforo {
+    -private String status;
+    +public Semaforo(String status)
+
+    +public String getStatus()
+    }
+
+interface Subject {
+    public void attach(Observer o);
+    public void dettach(Observer o);
+    public void notifyUpdate(Semaforo semaforo);
+    }
+
+class MessagePublisher implements Subject{
+
+
+    private List<Observer> observers = new ArrayList<>();
+
+    public void attach(Observer o)
+
+    public void dettach(Observer o)
+
+    public void notifyUpdate(Semaforo semaforo)
+        for(Observer o: observers)
+            o.update(semaforo);
+    }
+
+interface Observer {
+    public void update(Semaforo semaforo);
+    }
+
+
+
+
+class Peaton implements Observer{
+    public void update(Semaforo semaforo) {
+        if(semaforo.getStatus().equals("ROJO_COCHE"))
+    }
+
+class Coche implements Observer{
+    public void update(Semaforo semaforo) {
+        if(semaforo.getStatus().equals("ROJO_COCHE"))
+        }
+
+
+
+@enduml

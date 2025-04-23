@@ -7,4 +7,4 @@ son 11 en total
 3. [Iterator](#)
 4. [Mediator](#)
 5. [Memento](memento/doc/memento.md)
-6. 
+6. [Observer](observer/doc/observer.md)
