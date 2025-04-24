@@ -1,0 +1,43 @@
+# PlantUML Editor
+
+1. select template
+2. write uml diagram
+
+@startuml
+
+interface MobileAlertState {
+    void alert(MobileAlertStateContext context);
+}
+
+class Silent implements MobileAlertState{
+    @Override
+    public void alert(MobileAlertStateContext context)
+}
+
+class Sound implements MobileAlertState{
+    @Override
+    public void alert(MobileAlertStateContext context)
+}
+
+class Vibration implements MobileAlertState{
+    @Override
+    public void alert(MobileAlertStateContext context)
+}
+
+class MobileAlertStateContext {
+    private MobileAlertState currentState;
+
+    public MobileAlertStateContext()
+
+    public void setState(MobileAlertState state)
+
+
+    public void alert()
+
+}
+
+MobileAlertStateContext --> MobileAlertState
+Client  --> MobileAlertStateContext
+
+
+@enduml
