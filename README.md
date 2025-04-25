@@ -5,4 +5,4 @@ Este repositorio contiene la implementaciones de los 23 patrones definido por la
 
 * [Creational](src/creational/creational.md)
 * [Structural]()
-* [Behavioral]()
+* [Behavioral](src/behavioral/behavioral.md)

@@ -1,0 +1,23 @@
+@startuml
+abstract class Payment {
+    abstract void initialize();
+    abstract void startPayment();
+    abstract void endPayment();
+
+    public final void makePayment()
+
+}
+class Paypal extends Payment{
+    void initialize()
+    void startPayment()
+    void endPayment()
+}
+
+class Visa  extends Payment{
+    void initialize()
+    void startPayment()
+    void endPayment()
+}
+
+Cliente --> Payment
+@enduml
